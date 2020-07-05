@@ -1,0 +1,9 @@
+<h1>Display data</h1>
+<a href="/page">back</a>
+<a href="/page/<%= page._id %>/edit">edit</a>
+<form action='/page/<%= page._id%>?_method=DELETE' method="POST">
+  <button>delete</button>
+</form>
+
+<h1><%= page.title %></h1>
+<p><%= page.body %></p>

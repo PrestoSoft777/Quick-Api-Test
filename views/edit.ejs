@@ -1,0 +1,7 @@
+<h1>Edit page</h1>
+
+<form action="/page/<%= page._id %>?_method=PUT" method="POST">
+  <input type="text" name="post[title]" value="<%= page.title%>">
+  <input type="textarea" name="post[body]" value="<%= page.body %>">
+  <input type='submit'>
+</form>

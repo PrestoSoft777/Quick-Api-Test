@@ -1,0 +1,7 @@
+<h1>Show</h1>
+<a href="/">back</a>
+<a href="/page/new">New</a>
+<% page.forEach((page) => { %>
+  <a href='/page/<%= page._id %>'><%= page.title %></a>
+  <p><%= page.body %></p>
+<% }); %>
